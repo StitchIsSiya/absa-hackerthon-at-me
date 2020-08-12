@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     PaymentsComponent,
     BeneficiariesComponent,
-    DashboardComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

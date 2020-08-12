@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Beneficiary } from './model/beneficiary.model';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-beneficiaries',
@@ -10,10 +11,11 @@ import { Beneficiary } from './model/beneficiary.model';
 })
 export class BeneficiariesComponent implements OnInit {
   _beneficiaryJsonURL = '../../assets/data/beneficiaries.json';
+  showAdd = false;
 
   beneficiaries: Beneficiary[] = [];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private dialog: MatDialog) {
     this.getJSON().subscribe(
       data => {
         this.beneficiaries = data;
@@ -35,7 +37,11 @@ export class BeneficiariesComponent implements OnInit {
   }
 
   onAddBeneficiary() {
-    
+    this.showAdd = true; 
+  }
+
+  onClickOverlay() {
+    this.showAdd = false;
   }
 
 }
