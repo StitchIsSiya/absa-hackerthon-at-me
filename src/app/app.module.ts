@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { PaymentsComponent } from './payments/payments.component';
 import { BeneficiariesComponent } from './beneficiaries/beneficiaries.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     MaterialModule
   ],

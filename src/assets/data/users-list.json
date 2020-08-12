@@ -1,0 +1,33 @@
+[
+	{
+		"handle" : "WendyKnows",
+		"name" : "Wendy Rhoades",
+		"bank" : "Standard Bank",
+		"accountNumber" : "438294324324"  
+	},
+	{
+		"handle" : "siye20",
+		"name" : "Siyethemba Maphumulo",
+		"bank" : "ABSA",
+		"accountNumber" : "4093554309"  
+	},
+	{
+		"handle" : "JD",
+		"name" : "John Doe",
+		"bank" : "Merrill Lynch",
+		"accountNumber" : "55545678290"  
+    },
+    {
+		"handle" : "champagnepapi",
+		"name" : "Aubrey Graham",
+		"bank" : "Bank of Canada",
+		"accountNumber" : "4378294083"  
+    },
+    {
+		"handle" : "badgalriri",
+		"name" : "Robyn Fenty",
+		"bank" : "Republic Bank Barbados",
+		"accountNumber" : "8984837844"  
+	}
+    
+]

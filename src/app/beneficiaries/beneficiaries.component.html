@@ -45,7 +45,7 @@
 							<button class="btn btn-transparent-dark btn-icon dropdown-toggle"
 								id="dropdownPeople1" type="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
-								<mat-icon>more_vert</mat-icon>
+								<mat-icon>delete</mat-icon>
 							</button>
 							<div class="dropdown-menu dropdown-menu-right animated--fade-in-up"
 								aria-labelledby="dropdownPeople1">
@@ -75,10 +75,19 @@
 		</div>
 		<hr class="m-0">
 		<div class="card-body p-5">
-			<form>
-				<div class="form-group"><input class="form-control form-control-solid" type="text" placeholder="enter @absa_handle" aria-label="Access Code" aria-describedby="accessCodeExample"></div>
-				<a class="btn btn-block btn-primary" href="#!">Add</a>
-			</form>
+			
+				<div class="form-group">
+					<input 
+						class="form-control form-control-solid" 
+						type="text" 
+						placeholder="enter @absa_handle" 
+						aria-label="Access Code" 
+						aria-describedby="accessCodeExample"
+						matInput
+						[(ngModel)]="handle">
+					<span *ngIf="matchNotFound" style="font-size: 12px; color:red;" class="help-block">Handle does not exist</span>
+				</div>
+				<button class="btn btn-primary btn-block" (click)="onSubmit()">Add</button>
 		</div>
 	</div>
 </div>
