@@ -1,0 +1,20 @@
+[
+	{
+		"handle" : "Real_Axe",
+		"name" : "Robert Axelrod",
+		"bank" : "Axe Capital",
+		"accountNumber" : "1234567890"  
+	},
+	{
+		"handle" : "AG_Rhoades",
+		"name" : "Charles Rhoades Jr.",
+		"bank" : "ABSA",
+		"accountNumber" : "4093567209"  
+	},
+	{
+		"handle" : "TaylMaseCarbon",
+		"name" : "Taylor Mason",
+		"bank" : "FNB",
+		"accountNumber" : "6145678290"  
+	}
+]
